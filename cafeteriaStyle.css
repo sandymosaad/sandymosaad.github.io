@@ -6,27 +6,16 @@ body {
     color: #333;
 }
 
+/* ====== Hero Section ====== */
 .hero {
     background: linear-gradient(135deg, #a56d44, #e1c4a1);
     color: white;
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 20px;
     margin-bottom: 50px;
     border-bottom: 5px solid #e1c4a1;
     animation: fadeIn 1.5s ease-in-out;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 .hero h1 {
     font-size: 3rem;
@@ -41,6 +30,19 @@ body {
     margin: 0 auto;
 }
 
+/* ====== Keyframe Animation ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== Carousel ====== */
 .carousel-item img {
     width: 100%;
     max-width: 600px;
@@ -51,12 +53,12 @@ body {
     border-radius: 10px;
 }
 
-
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #a56d44;
 }
 
-.skills-section, .summary-section, .user-roles, .features  {
+/* ====== Sections Styling ====== */
+.skills-section, .summary-section, .user-roles, .features {
     width: 80%;
     padding: 40px 20px;
     text-align: center;
@@ -64,20 +66,21 @@ body {
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
-.skills-section:hover, .summary-section:hover, .user-roles:hover, .features:hover{
-    transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
 }
 
-.skills-section h2, .summary-section h2, .user-roles h2, .features h2  {
+.skills-section:hover, .summary-section:hover, .user-roles:hover, .features:hover {
+    transform: scale(1.02);
+}
+
+.skills-section h2, .summary-section h2, .user-roles h2, .features h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
 }
 
-.skills-section ul, .summary-section ul, .user-roles ul, .features ul  {
+.skills-section ul, .summary-section ul, .user-roles ul, .features ul {
     list-style: none;
     padding: 0;
 }
@@ -89,6 +92,7 @@ body {
     color: #555;
 }
 
+/* ====== GitHub Section ====== */
 .github-section {
     text-align: center;
     margin-top: 50px;
@@ -104,15 +108,13 @@ body {
     font-weight: 500;
     transition: background-color 0.3s ease;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .github-section a:hover {
     background-color: #8b5634;
 }
 
-
-
+/* ====== Footer ====== */
 .footer {
     background: linear-gradient(135deg, #a56d44, #e1c4a1);
     color: #fff;
@@ -125,6 +127,79 @@ body {
     font-size: 1rem;
 }
 
-.carousel {
-    border-radius: 10px;
+/* ====== Responsive Design ====== */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .skills-section, .summary-section, .user-roles, .features {
+        width: 90%;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .skills-section h2, .summary-section h2, .user-roles h2, .features h2 {
+        font-size: 2rem;
+    }
+
+    .skills-section, .summary-section, .user-roles, .features {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .github-section a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .skills-section, .summary-section, .user-roles, .features {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    .skills-section h2, .summary-section h2, .user-roles h2, .features h2 {
+        font-size: 1.8rem;
+    }
+
+    .github-section a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }

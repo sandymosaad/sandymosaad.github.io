@@ -135,3 +135,69 @@ body {
         font-size: 1rem;
     }
 }
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    .skills-section, .summary-section, .features, .website-sections {
+        width: 90%;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .skills-section h2, .summary-section h2, .features h2, .website-sections h2 {
+        font-size: 2rem;
+    }
+    .skills-section, .summary-section, .features, .website-sections {
+        width: 95%;
+        margin: 30px auto;
+        padding: 25px 10px;
+    }
+    .website-section a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .skills-section h2, .summary-section h2, .features h2, .website-sections h2 {
+        font-size: 1.8rem;
+    }
+    .skills-section, .summary-section, .features, .website-sections {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px 10px;
+    }
+    .website-section a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
