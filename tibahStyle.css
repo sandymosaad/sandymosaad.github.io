@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #2ecc71; /* Green color lightened */
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #27ae60; /* Darker green accent */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-section {
+    padding: 60px 20px;
+}
+
+.projects-section {
+    padding: 60px 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 30px;
+}
+
+.card-body h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.btn{
+    background-color: #2ecc71;
+}
+
+.footer {
+    background-color: #2ecc71; /* Green color lightened */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}

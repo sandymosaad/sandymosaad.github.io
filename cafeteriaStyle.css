@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.hero {
+    background: linear-gradient(135deg, #a56d44, #e1c4a1);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    margin-bottom: 50px;
+    border-bottom: 5px solid #e1c4a1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #a56d44;
+}
+
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #555;
+}
+
+.github-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.github-section a {
+    text-decoration: none;
+    background-color: #a56d44;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.github-section a:hover {
+    background-color: #8b5634;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.carousel {
+    border-radius: 10px;
+}
