@@ -56,7 +56,7 @@ body {
     background-color: #a56d44;
 }
 
-.skills-section, .summary-section {
+.skills-section, .summary-section, .user-roles, .features  {
     width: 80%;
     padding: 40px 20px;
     text-align: center;
@@ -65,24 +65,24 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-.skills-section:hover, .summary-section:hover{
+.skills-section:hover, .summary-section:hover, .user-roles:hover, .features:hover{
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
 }
 
-.skills-section h2 {
+.skills-section h2, .summary-section h2, .user-roles h2, .features h2  {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
 }
 
-.skills-section ul {
+.skills-section ul, .summary-section ul, .user-roles ul, .features ul  {
     list-style: none;
     padding: 0;
 }
 
-.skills-section li {
+.skills-section li, .summary-section li, .user-roles li, .features li {
     font-size: 1.2rem;
     margin: 10px 0;
     font-weight: 500;

@@ -13,8 +13,19 @@ body {
     padding: 80px 0;
     margin-bottom: 50px;
     border-bottom: 5px solid #ff8e53;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -38,28 +49,34 @@ body {
     background-color: #ff8e53;
 }
 
-.skills-section {
-    padding: 60px 20px;
+.skills-section, .summary-section, .user-roles, .features {
+    width: 80%;
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto;
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+.skills-section:hover, .summary-section:hover, .user-roles:hover, .features:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
 
-.skills-section h2 {
+
+.skills-section h2, .summary-section h2, .user-roles h2, .features h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
 }
 
-.skills-section ul {
+.skills-section ul, .summary-section ul, .user-roles ul, .features ul {
     list-style: none;
     padding: 0;
 }
 
-.skills-section li {
+.skills-section li, .summary-section li, .user-roles li, .features li  {
     font-size: 1.2rem;
     margin: 10px 0;
     font-weight: 500;
@@ -87,7 +104,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #ff5c8d, #ff8e53);
     color: #fff;
     text-align: center;
     padding: 30px 0;

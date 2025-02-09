@@ -7,14 +7,25 @@ body {
 }
 
 .hero {
-    background-color: #2c3e50; /* Navy blue */
+    background: linear-gradient(45deg,#2c3e50, #3498db);
     color: white;
     text-align: center;
     padding: 80px 0;
     margin-bottom: 50px;
-    border-bottom: 5px solid #2980b9; /* Accent color */
+    border-bottom: 5px solid #2980b9; 
+    animation: fadeIn 1.5s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -37,47 +48,73 @@ body {
     padding: 60px 20px;
     text-align: center;
 }
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.skills-section, .summary-section, .features, .website-sections  {
+    width: 80%;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden;
-    margin: 20px 0;
+}
+.skills-section:hover, .summary-section:hover, .features:hover, .website-sections:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
-.card-img {
-    object-fit: cover;
-    border-bottom: 2px solid #2980b9;
-}
-
-.card-title {
-    font-size: 1.8rem;
+.skills-section h2, .summary-section h2, .features h2, .website-sections h2  {
+    font-size: 2.5rem;
+    font-weight: 600;
     color: #333;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.card p {
-    font-size: 1.1rem;
+.skills-section ul, .summary-section ul, .features ul, .website-sections ul  {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li, .summary-section li, .features li, .website-sections li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 500;
     color: #555;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #2c3e50;
+}
+.carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.website-section {
+    text-align: center;
+    margin-top: 50px;
+}
 
-.card .btn {
-    background-color: #2980b9; /* Accent color */
-    color: white;
-    padding: 10px 20px;
+.website-section a {
     text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
     border-radius: 5px;
     font-weight: 500;
     transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card .btn:hover {
-    background-color: #1c6fa1; /* Darker shade for hover */
+.website-section a:hover {
+    background-color: #2c3e50;
 }
 
 .footer {
-    background-color: #2c3e50;
+    background: linear-gradient(45deg,#2c3e50, #3498db);
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -88,9 +125,7 @@ body {
     font-size: 1rem;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #fff; /* White color for icons */
-}
+
 
 @media (max-width: 768px) {
     .hero h1 {
